@@ -1,0 +1,12 @@
+# ======================
+# ENVIRONMENT SETTINGS
+# ======================
+
+# Virtual Environment
+# Contains isolated Python packages and dependencies
+env/            
+
+# Configuration
+# Stores secret keys, API tokens, and environment-specific settings               
+# WARNING: Never commit this file to version control
+.env            
