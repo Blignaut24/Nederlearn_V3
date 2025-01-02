@@ -1,4 +1,47 @@
-asgiref==3.8.1
-Django==5.1.4
-sqlparse==0.5.3
-tzdata==2024.2
+# ======================================
+# Core Django and Framework Dependencies
+# ======================================
+asgiref==3.8.1                    # Handles async operations - important for handling multiple web requests
+Django==5.1.4                     # Main web framework - provides structure and tools for web development
+gunicorn==23.0.0                  # Production web server - serves your application to users
+
+# ======================================
+# Security and Authentication
+# ======================================
+django-allauth==65.3.1            # Handles user login/signup - makes account management easier
+PyJWT==2.10.1                     # JSON Web Tokens - secure way to send user information
+oauthlib==3.2.2                   # Handles secure logins with services like Google/Facebook
+python3-openid==3.2.0             # Another authentication helper
+certifi==2024.12.14              # Security certificates - keeps connections secure
+
+# ======================================
+# Database and Storage
+# ======================================
+dj-database-url==2.3.0            # Makes database connections simpler
+psycopg2==2.9.10                  # Connects to PostgreSQL database
+sqlparse==0.5.3                   # Helps read and write database queries
+cloudinary==1.41.0                # Stores images and files online
+dj3-cloudinary-storage==0.0.6     # Connects Django to Cloudinary
+
+# ======================================
+# User Interface and Forms
+# ======================================
+django-crispy-forms==2.3          # Makes forms look better
+django-summernote==0.8.20.0       # Adds a nice text editor
+bleach==6.2.0                     # Keeps user input safe
+webencodings==0.5.1               # Handles different text encodings
+
+# ======================================
+# Utility Packages
+# ======================================
+pytz==2024.2                      # Handles time zones
+requests==2.32.3                  # Makes it easy to send web requests
+urllib3==2.3.0                    # Helper for making web requests
+charset-normalizer==3.4.1         # Handles different text formats
+typing_extensions==4.12.2         # Helps with Python type hints
+tzdata==2024.2                    # Time zone database
+packaging==24.2                   # Helps manage Python packages
+six==1.17.0                       # Compatibility between Python versions
+idna==3.10                        # Handles web addresses
+defusedxml==0.7.1                # Safely handles XML files
+requests-oauthlib==2.0.0         # Helps with secure authentication
